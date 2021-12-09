@@ -5,4 +5,3 @@ function helloWorld() {
 }
 
 console.log(input);
-helloWorld();
