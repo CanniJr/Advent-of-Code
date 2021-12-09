@@ -1,7 +1,15 @@
 const input = require("./input");
 
-function helloWorld() {
-  console.log("Hello World!");
+const sample = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
+
+function largerMeasurements(array) {
+  let larger = 0;
+  for (let i = 1; i <= array.length; i++) {
+    if (array[i] > array[i - 1]) {
+      larger++;
+    }
+  }
+  console.log(larger);
 }
 
-console.log(input);
+largerMeasurements(input);
